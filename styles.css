@@ -1,0 +1,30 @@
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+header {
+  background-color: #2da1ae;
+}
+
+img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+nav {
+  display: inline;
+}
+
+.link {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+#glavni {
+  background-color: green;
+}
