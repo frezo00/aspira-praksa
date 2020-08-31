@@ -18,23 +18,41 @@ nav {
   display: inline;
 }
 
+nav > a.link {
+  color: red;
+}
 .link {
   display: inline-block;
   margin: 10px;
   padding: 10px;
+  color: green;
+}
+.link:hover {
   color: white;
+}
+span.link::after {
+  content: "*";
+  color: red;
 }
 
 #glavni {
   background-color: green;
 }
 
+/* For mobile */
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1180px;
   margin: 0 auto;
+}
+
+/* min-width -> Mobile first */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
