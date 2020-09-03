@@ -3,33 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moja stranica</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Praksa</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/index.js"></script>
   </head>
   <body>
-    <header class="top-header" id="top-top-header">
-      <div class="container">
-        <img src="./images/logo.png" alt="Logo" />
-        <nav>
-          <a href="#" class="link">Home</a>
-          <a href="#" class="link">People</a>
-          <a href="#" class="link">Projects</a>
-          <a href="#" class="link">About</a>
-          <span class="link">
-            <a href="#" class="link">Primjer</a>
-          </span>
-        </nav>
-      </div>
+    <header class="flex">
+      <button class="margin" onclick="onSidebarToggle()">
+        Toggle sidebar
+      </button>
     </header>
-
-    <main id="glavni" class="container">
-      <section>
-        <img src="./images/timthumb.jpeg" alt="Moja slika" />
-      </section>
-      <section>Druga</section>
-      <section>Treća</section>
+    <main id="main-container" class="flex">
+      <nav id="sidebar-container" class="sidebar">
+        <a href="extra.html">Extra</a>
+      </nav>
+      <div class="flex flex--column flex--grow">
+        <section id="box-container" class="flex flex--center flex--grow">
+          <div
+            id="blue-box"
+            class="box box--blue"
+            onclick="onDuplicateBox(id)"
+          ></div>
+          <div
+            id="red-box"
+            class="box box--red"
+            onclick="onDuplicateBox(id)"
+          ></div>
+          <div
+            id="green-box"
+            class="box box--green"
+            onclick="onDuplicateBox(id)"
+          ></div>
+        </section>
+      </div>
     </main>
-
-    <footer>Podnožje</footer>
   </body>
 </html>

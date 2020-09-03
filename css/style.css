@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: darkgrey;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--grow {
+  flex-grow: 1;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.box--blue {
+  background-color: blue;
+}
+
+.box--red {
+  background-color: red;
+}
+
+.box--green {
+  background-color: green;
+}
+
+.margin {
+  margin: 20px;
+}
+
+.sidebar {
+  display: none;
+  background-color: bisque;
+}
+
+.sidebar--open {
+  display: block;
+  width: 200px;
+}
