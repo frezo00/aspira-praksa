@@ -10,9 +10,7 @@
   </head>
   <body>
     <header class="flex">
-      <button class="margin" onclick="onSidebarToggle()">
-        Toggle sidebar
-      </button>
+      <button class="margin" onclick="onSidebarToggle()">Toggle sidebar</button>
     </header>
     <main id="main-container" class="flex">
       <nav id="sidebar-container" class="sidebar">
@@ -20,21 +18,9 @@
       </nav>
       <div class="flex flex--column flex--grow">
         <section id="box-container" class="flex flex--center flex--grow">
-          <div
-            id="blue-box"
-            class="box box--blue"
-            onclick="onDuplicateBox(id)"
-          ></div>
-          <div
-            id="red-box"
-            class="box box--red"
-            onclick="onDuplicateBox(id)"
-          ></div>
-          <div
-            id="green-box"
-            class="box box--green"
-            onclick="onDuplicateBox(id)"
-          ></div>
+          <div id="blue-box" class="box box--blue"></div>
+          <div id="red-box" class="box box--red"></div>
+          <div id="green-box" class="box box--green"></div>
         </section>
       </div>
     </main>
