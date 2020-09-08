@@ -84,5 +84,5 @@ function onSubmit(event) {
   event.preventDefault(); // Izbjeći automatsko refreshanje stranice
 
   const emailValue = document.getElementById("mail").value;
-  console.log(emailValue);
+  alert(emailValue);
 }
