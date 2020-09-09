@@ -1,0 +1,14 @@
+//https://www.npmjs.com/package/eslint
+
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": ["error", "always"],
+  }
+}

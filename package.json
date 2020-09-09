@@ -1,0 +1,26 @@
+{
+  "name": "aspira-praksa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:check": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frezo00/aspira-praksa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frezo00/aspira-praksa/issues"
+  },
+  "homepage": "https://github.com/frezo00/aspira-praksa#readme",
+  "dependencies": {
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1"
+  }
+}
