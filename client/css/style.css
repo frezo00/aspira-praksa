@@ -10,6 +10,11 @@ main {
   min-height: 100vh;
 }
 
+input {
+  height: 16px;
+  width: 80px;
+}
+
 .flex {
   display: flex;
 }

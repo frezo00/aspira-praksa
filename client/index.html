@@ -7,10 +7,16 @@
     <title>Praksa</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer type="module" src="js/index.js"></script>
+    <!-- <script src="js/async.js"></script> -->
   </head>
   <body>
-    <header class="flex">
+    <header class="flex flex--center">
       <button class="margin" onclick="onSidebarToggle()">Toggle sidebar</button>
+      <input id="id-input" type="number" />
+      <button id="get-students" class="margin">Get All</button>
+      <button id="get-student" class="margin">Get</button>
+      <button id="post-student" class="margin">Add</button>
+      <button id="delete-student" class="margin">Remove</button>
     </header>
     <main id="main-container" class="flex">
       <nav id="sidebar-container" class="sidebar">

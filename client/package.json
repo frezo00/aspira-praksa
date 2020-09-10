@@ -16,11 +16,5 @@
   "bugs": {
     "url": "https://github.com/frezo00/aspira-praksa/issues"
   },
-  "homepage": "https://github.com/frezo00/aspira-praksa#readme",
-  "dependencies": {
-    "moment": "^2.27.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.8.1"
-  }
+  "homepage": "https://github.com/frezo00/aspira-praksa#readme"
 }
