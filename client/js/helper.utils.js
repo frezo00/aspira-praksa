@@ -55,10 +55,10 @@ export const totalAge = students.reduce(
 //   box.addEventListener("click", onBoxClick);
 // }
 
-export function createBox({ id, element, colour = "green", ...rest }) {
-  const html = `<${element} id="${id}" class="box box--${colour}"></${element}>`;
+export function createElement({ id, name, age, gender }) {
+  const html = `<li id="student-${id}">Name: ${name} Age: ${age} Gender: ${gender}</li>`;
 
-  const template = document.createElement('template');
+  const template = document.createElement("template");
 
   template.innerHTML = html;
 
@@ -68,6 +68,6 @@ export function createBox({ id, element, colour = "green", ...rest }) {
 export default {
   students,
   males,
-  createBox,
+  createElement,
   names
 };

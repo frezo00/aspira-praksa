@@ -1,4 +1,5 @@
 import http from "./http.service.js";
+import { createElement } from "./helper.utils.js";
 
 function onSidebarToggle() {
   const sidebarRef = document.querySelector("#sidebar-container");
@@ -38,22 +39,39 @@ function setId(event) {
   requestId = event.target.value;
 }
 
+function setList(students) {
+  const listRef = document.getElementById("student-list");
+
+  listRef.innerHTML = "";
+
+  students.forEach(student => {
+    listRef.append(createElement(student));
+  });
+}
+
 async function onGetStudents() {
-  console.log(await http.getStudents());
+  const students = await http.getStudents();
+
+  setList(students);
 }
 
 async function onGetStudent() {
-  console.log(await http.getStudent(requestId));
+  const student = await http.getStudent(requestId);
+
+  setList([student]);
 }
 
 async function onPostStudent() {
   const data = { name: "John", gender: "male", age: 100 };
+  const students = await http.postStudent(data);
 
-  console.log(await http.postStudent(data));
+  setList(students);
 }
 
 async function onDeleteStudent() {
-  console.log(await http.deleteStudent(requestId));
+  const students = await http.deleteStudent(requestId);
+
+  setList(students);
 }
 
 document.getElementById("id-input").addEventListener("change", setId);
