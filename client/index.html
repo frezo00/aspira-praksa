@@ -12,32 +12,33 @@
   <body>
     <header class="flex flex--center">
       <button class="margin" onclick="onSidebarToggle()">Toggle sidebar</button>
-      <input id="id-input" type="number" />
+      <input id="id-input" type="number" min="0" />
       <button id="get-students" class="margin">Get All</button>
       <button id="get-student" class="margin">Get</button>
-      <button id="post-student" class="margin">Add</button>
       <button id="delete-student" class="margin">Remove</button>
     </header>
     <main id="main-container" class="flex">
       <nav id="sidebar-container" class="sidebar">
         <a href="extra.html">Extra</a>
       </nav>
-      <div class="flex flex--column flex--grow">
-        <!-- <section id="box-container" class="flex flex--center flex--grow">
-          <div id="blue-box" class="box box--blue"></div>
-          <div id="red-box" class="box box--red"></div>
-          <div id="green-box" class="box box--green"></div>
-        </section> -->
+      <div class="margin">
+        <form id="form" class="flex flex--column">
+          <label for="mail">Name:</label>
+          <input type="text" name="name" id="name" />
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" />
+          <div class="flex">
+            <span>Gender:</span>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="bikonja">Bikonja</label>
+            <input type="radio" id="bikonja" name="gender" value="bikonja" />
+          </div>
+          <button class="margin" type="submit">Submit</button>
+        </form>
         <ul id="student-list"></ul>
-      </div>
-      <div class="flex flex--column flex--grow">
-        <section id="form-container" class="flex flex--center flex--grow">
-          <form onsubmit="onSubmit(event)" id="form">
-            <label for="mail">Email</label>
-            <input type="text" name="email" id="mail" />
-            <button type="submit">Submit</button>
-          </form>
-        </section>
       </div>
     </main>
   </body>

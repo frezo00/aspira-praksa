@@ -20,13 +20,6 @@ function onDuplicateBox(id) {
   document.getElementById("box-container").append(newBox);
 }
 
-function onSubmit(event) {
-  event.preventDefault(); // Izbjeći automatsko refreshanje stranice
-
-  const emailValue = document.getElementById("mail").value;
-  console.log(emailValue);
-}
-
 const boxes = document.querySelectorAll(".box"); // boxes je lista html elemenata
 
 boxes.forEach(box => box.addEventListener("click", onBoxClick));
@@ -74,14 +67,26 @@ async function onDeleteStudent() {
   setList(students);
 }
 
+async function onSubmit(event) {
+  event.preventDefault(); // Izbjeći automatsko refreshanje stranice
+
+  const { name, age, gender } = event.target.elements;
+  const data = {
+    name: name.value || "John",
+    age: age.value || 100,
+    gender: gender.value
+  };
+  const students = await http.postStudent(data);
+
+  setList(students);
+}
+
 document.getElementById("id-input").addEventListener("change", setId);
 document
   .getElementById("get-students")
   .addEventListener("click", onGetStudents);
 document.getElementById("get-student").addEventListener("click", onGetStudent);
 document
-  .getElementById("post-student")
-  .addEventListener("click", onPostStudent);
-document
   .getElementById("delete-student")
   .addEventListener("click", onDeleteStudent);
+document.getElementById("form").addEventListener("submit", onSubmit);

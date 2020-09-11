@@ -10,7 +10,7 @@ main {
   min-height: 100vh;
 }
 
-input {
+.input {
   height: 16px;
   width: 80px;
 }
