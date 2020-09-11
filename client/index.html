@@ -23,18 +23,24 @@
       </nav>
       <div class="margin">
         <form id="form" class="flex flex--column">
-          <label for="mail">Name:</label>
+          <label for="name">Name:</label>
           <input type="text" name="name" id="name" />
           <label for="age">Age:</label>
-          <input type="number" name="age" id="age" />
+          <input type="number" min="0" name="age" id="age" />
           <div class="flex">
             <span>Gender:</span>
             <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" value="male" checked />
+            <input type="radio" id="male" name="gender" value="male" />
             <label for="female">Female</label>
             <input type="radio" id="female" name="gender" value="female" />
             <label for="bikonja">Bikonja</label>
-            <input type="radio" id="bikonja" name="gender" value="bikonja" />
+            <input
+              type="radio"
+              id="bikonja"
+              name="gender"
+              value="bikonja"
+              checked
+            />
           </div>
           <button class="margin" type="submit">Submit</button>
         </form>

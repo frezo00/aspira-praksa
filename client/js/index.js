@@ -54,13 +54,6 @@ async function onGetStudent() {
   setList([student]);
 }
 
-async function onPostStudent() {
-  const data = { name: "John", gender: "male", age: 100 };
-  const students = await http.postStudent(data);
-
-  setList(students);
-}
-
 async function onDeleteStudent() {
   const students = await http.deleteStudent(requestId);
 
