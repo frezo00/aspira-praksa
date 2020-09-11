@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/frezo00/aspira-praksa/issues"
   },
-  "homepage": "https://github.com/frezo00/aspira-praksa#readme"
+  "homepage": "https://github.com/frezo00/aspira-praksa#readme",
+  "dependencies": {}
 }
